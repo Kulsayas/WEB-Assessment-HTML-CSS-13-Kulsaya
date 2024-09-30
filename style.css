@@ -27,7 +27,8 @@ body {
   list-style: none;
 }
 .section__banner,
-.section__main {
+.section__main,
+.section_exhibit {
   display: flex;
   position: relative;
 
@@ -35,7 +36,8 @@ body {
   gap: 24px;
   background-color: #d8d8d8;
 }
-.section__main {
+.section__main,
+.section_exhibit {
   background-color: #fff;
 }
 .section__banner-img-lef {
@@ -59,6 +61,7 @@ body {
 .banner-content-right > h1 {
   width: 100%;
   font-size: 500%;
+  line-height: 100%;
   color: #515151;
 }
 .banner-content-right > h3 {
@@ -68,11 +71,11 @@ body {
   color: #515151;
 }
 .banner-content-right > button {
-  width: 75%;
+  width: 90%;
   font-size: 150%;
   font-style: normal;
   padding: 8px;
-  margin-top: 32px;
+  margin-top: 44px;
   background-color: #4a4a4a;
   color: #fff;
   border: none;
@@ -141,4 +144,50 @@ body {
 .main-content-img-content > h1 {
   font-size: 200%;
   color: #515151;
+}
+
+/* Section Start learning */
+.section__learning {
+  text-align: center;
+  padding: 32px 72px 32px 72px;
+  background-color: #eaebec;
+}
+.section__learning > h1 {
+  font-size: 300%;
+  color: #4a4a4a;
+}
+.section__learning-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 32px;
+}
+.section__learning-content > img {
+  width: fit-content;
+  height: auto;
+}
+.learning-content-main {
+  background-color: #fff;
+}
+.learning-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 8px;
+  padding: 16px 16px 24px 16px;
+}
+.learning-content > h1 {
+  font-size: 250%;
+  color: #4a4a4a;
+}
+.learning-content > p {
+  font-size: 130%;
+  color: #4a4a4a;
+  font-style: normal;
+}
+
+/* section Thesis exhibit*/
+.section__main-img-left > iframe {
+  width: 60%;
 }
