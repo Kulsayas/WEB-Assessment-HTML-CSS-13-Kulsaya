@@ -376,17 +376,12 @@ hr {
   }
   .main-content-img {
     width: 100%;
+    display: flex;
 
     padding: 0px 16px 16px 16px;
-    margin-bottom: 16px;
   }
 
   .main-content-img-content {
-    position: absolute;
-    width: 50%;
-    top: 25%;
-    left: 45%;
-
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -394,17 +389,17 @@ hr {
 
   .main-content-img-content > a {
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1rem;
     color: #5093e2;
   }
   .main-content-img-content > p {
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: 300;
     color: #515151;
   }
   .main-content-img-content > h1 {
-    font-size: 200%;
+    font-size: 1.5rem;
     color: #515151;
   }
 
