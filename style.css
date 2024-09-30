@@ -27,9 +27,9 @@ body {
   list-style: none;
 }
 .section__banner,
-.section__main,
-.section_exhibit {
+.section__main {
   display: flex;
+  text-align: left;
   position: relative;
 
   padding: 32px 24px 32px 24px;
@@ -93,7 +93,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.main-content-left {
+.main-content-left,
+.exhibit-content-left {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
@@ -108,10 +109,12 @@ body {
   font-weight: 10%;
   color: #4a4a4a;
 }
-.section__main-content-right {
+.section__main-content-right,
+.section__exhibit-content-right {
   width: 40%;
 }
-.main-content-img {
+.main-content-img,
+.exhibit-content-img {
   position: relative;
   display: flex;
   width: 100%;
@@ -120,7 +123,8 @@ body {
   margin-bottom: 16px;
 }
 
-.main-content-img-content {
+.main-content-img-content,
+.exhibit-content-img-content {
   position: absolute;
   width: 50%;
   top: 25%;
@@ -188,6 +192,62 @@ body {
 }
 
 /* section Thesis exhibit*/
-.section__main-img-left > iframe {
+.section_exhibit {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 32px 24px;
+  gap: 24px;
+}
+.section_exhibit > h1 {
+  font-size: 400%;
+  color: #4a4a4a;
+  text-align: center;
+}
+.section_exhibit-content {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+.section__exhibit-vdo-left {
   width: 60%;
+}
+.section__exhibit-vdo-left > video {
+  width: 100%;
+  height: auto;
+}
+.exhibit-content-left > h2 {
+  font-size: 400%;
+  color: #4a4a4a;
+}
+.exhibit-content-left > p {
+  font-size: 150%;
+  font-weight: 10%;
+  color: #4a4a4a;
+}
+.exhibit-content-img-content > a {
+  text-decoration: none;
+  font-size: 150%;
+  color: #5093e2;
+}
+.exhibit-content-img-content > p {
+  text-decoration: none;
+  font-size: 150%;
+  color: #515151;
+}
+.exhibit-content-img-content > h1 {
+  font-size: 200%;
+  color: #515151;
+}
+
+/* <!-- scetion footer --> */
+.footer {
+  padding: 16px 24px 40px 24px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  color: #818181;
+}
+hr {
+  border: 0.5px solid #e8eaea;
 }
