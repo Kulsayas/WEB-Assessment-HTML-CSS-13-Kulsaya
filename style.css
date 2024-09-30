@@ -35,14 +35,14 @@ body {
   gap: 24px;
   background-color: #d8d8d8;
 }
-
-/* .section__banner-img-left,
-.section__main-img-left {
+.section__main {
+  background-color: #fff;
+}
+.section__banner-img-lef {
   width: 60%;
-} */
-.section__banner-img-left,
-.section__main-img-left > img {
-  width: fit-content;
+}
+.section__banner-img-left > img {
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -57,18 +57,18 @@ body {
   left: 10%;
 }
 .banner-content-right > h1 {
-  width: 70%;
-  font-size: 350%;
+  width: 100%;
+  font-size: 500%;
   color: #515151;
 }
 .banner-content-right > h3 {
-  width: 65%;
-  font-size: 200%;
+  width: 100%;
+  font-size: 300%;
   margin-top: 32px;
   color: #515151;
 }
 .banner-content-right > button {
-  width: 70%;
+  width: 75%;
   font-size: 150%;
   font-style: normal;
   padding: 8px;
@@ -82,40 +82,63 @@ body {
   display: flex;
   flex-direction: column;
 }
+.section__main-img-left {
+  width: 60%;
+}
+.section__main-img-left > img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-content-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 24px;
+}
+.main-content-left > h2 {
+  font-size: 400%;
+  color: #4a4a4a;
+}
+.main-content-left > p {
+  font-size: 150%;
+  font-weight: 10%;
+  color: #4a4a4a;
+}
 .section__main-content-right {
   width: 40%;
-  position: relative;
-}
-.main-content-right {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-
-  display: flex;
-}
-.main-content-img > img {
-  width: 35%;
-  height: auto;
 }
 .main-content-img {
-  display: flex;
-  padding: 16px;
-  gap: 24px;
-
   position: relative;
-}
-.main-content-img-content {
+  display: flex;
   width: 100%;
 
+  padding: 0px 16px 16px 16px;
+  margin-bottom: 16px;
+}
+
+.main-content-img-content {
   position: absolute;
-  top: 30%;
-  left: 40%;
-  line-height: 2rem;
+  width: 50%;
+  top: 25%;
+  left: 45%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-content-img-content > a {
+  text-decoration: none;
+  font-size: 150%;
+  color: #5093e2;
 }
 .main-content-img-content > p {
-  margin-top: 8px;
+  text-decoration: none;
+  font-size: 150%;
+  color: #515151;
 }
-.main-content-img-content > a {
-  color: #5093e2;
-  text-decoration: none !important;
+.main-content-img-content > h1 {
+  font-size: 200%;
+  color: #515151;
 }
